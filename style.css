@@ -1,0 +1,162 @@
+
+html, body {
+    width: 100%;
+    height: 100vh;
+    min-height: 40vh;
+}
+body {
+    background-image: url('milky-way.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+    min-width: 450px;
+    min-height: 390px;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+        "navbar"
+        "login"
+    ;
+    width: inherit;
+    grid-template-rows: 1fr 5fr;
+    height: 93%;
+    /* max-width:; */
+}
+
+.navbar {
+    grid-area: "navbar";
+    width: 60%;
+    height: 30%;
+    position: relative;
+    top: 0%;
+    left: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.navbar > a {
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 37px;
+    color: #878b8b;
+    margin: 0px 10px;
+    opacity: 1;
+}
+.navbar > a:hover {
+    opacity: 0.7;
+    transform: scale(1.1);
+}
+.login {
+    grid-area: "login";
+    width: 60%;
+    max-width: 800px;
+    height: 100%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+ .label, .input {
+    color: #eff7f7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
+ }
+
+ .label {
+    font-size: 1.9rem;
+    text-align: center;
+ }
+ .input {
+    width: 60%;
+    height: 32%;
+    position: relative;
+    top: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+ }
+ .user, .mk {
+    width: 100%;
+    height: 37%;
+}
+
+
+.mk, .user, .forgot {
+    border-bottom: 1px solid #fff ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input1 {
+    width: 86%;
+    height: 80%;
+    background-color: inherit;
+    border: none;
+    color: #fff;
+    outline: none;
+    margin-left: 11px;
+}
+.forgot {
+    width: 100%;
+    height: 26%;
+    border: none;
+    font-size: 0.8rem;
+    justify-content: space-between;
+}
+
+.forgot > div, .forgot{
+    display: flex;
+}.forgot > div > input, .forgot > a {
+    margin: 0px 7px;
+    color: #fff;
+    text-decoration: none;
+}
+.forgot > div > div:hover, .forgot > a:hover{
+    opacity: 0.8;
+}
+#b_log {
+    width: 100%;
+    height: 22%;
+    background-color:#ffffff1a;
+    color: inherit;
+    border-radius: 5px;
+    border: 1px solid;
+
+}
+#but2 {
+    position: relative;
+    top: 10%;
+    display: flex;
+    justify-content: space-between;
+    height: 22%;
+}
+#but2 > button{
+    width: 45%;
+    height: 100%;
+    background-color:#ffffff1a;
+    color: inherit;
+    border-radius: 5px;
+    border: 1px solid;
+}
+ #b_log:hover, #but2 > button:hover {
+    background-color: inherit;
+    color: #ffffff8f;
+    cursor: pointer;
+    border: 1px solid #ffffff8f;
+ } 
+ footer {
+    color: #ffffff9f;
+    text-align: center;
+ } 
+
+ #dialog{
+    margin-top: 0px;
+    background-color: #fff;
+}
+#mk1 {
+    margin-bottom: 20px;
+}
+
